@@ -1,0 +1,9 @@
+This bug occurs when using Tailwind CSS's `@apply` directive with a complex class name that contains special characters or spaces.  The `@apply` directive might not correctly interpret the class name, leading to unexpected styling or no styling at all. For example:
+
+```html
+<div class="@apply bg-gray-100 p-4 text-center mt-8 rounded-lg shadow-md">
+  Hello, world!
+</div>
+```
+
+If the complex class name involves dynamically generated classes or contains unsupported characters, the styles may not apply correctly.
